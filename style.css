@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --bg-color: #000;
+    --text-color-white: #FFFFFF;
+    --text-color-gray: #FFFFFFB2;
+    --btn-color-blue: #0070F3;
+    --btn-color-gray: #1E1E1E;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    background-image: url('./img/elipse.svg');
+}
+
+.container {
+    width: 1136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .principal {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: var(--text-color-white);
+
+        & .content {
+
+            & h1 {
+                font-size: 80px;
+                margin-bottom: 30px;
+                font-weight: 500;
+            }
+
+            & p {
+                color: var(--text-color-gray);
+                font-size: 40px;
+            }
+        }
+
+        & .btns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            & a {
+                font-size: 24px;
+                color: var(--text-color-white);
+                font-weight: bold;
+                padding: 10px 55px;
+                border-radius: 10px;
+                background-color: var(--btn-color-gray);
+            }
+
+            & a:first-child {
+                background-color: var(--btn-color-blue);
+
+
+            }
+        }
+    }
+
+    & .card {
+        width: 390px;
+        height: 373px;
+        background-image: url("./img/robo.svg");
+        display: flex;
+        align-items: flex-end;
+
+        & .info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 17px 20px;
+            align-items: center;
+            background-color: rgba(43, 43, 43, 30%);
+            backdrop-filter: blur(24.37px);
+            border-radius: 0px 0px 15px 15px;
+
+            &.content{
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 10px;
+            }
+            & a{
+                background: rgba(0,0,0, 40%);
+                padding: 12px 45px;
+                border-radius: 100px;
+                color: #FFFFFF;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
